@@ -82,7 +82,7 @@ def main():
     print(len(dialogs))
     df = pd.DataFrame(dialogs)
     print(df.head())
-    df.to_csv('scrape_hot_200_tldrfix.csv')
+    df.to_csv('./csv/scrape_hot_200_tldrfix.csv')
     end_time = str(datetime.now())[5:19]
     print(f'Start time: {start}, endtime: {end_time}')
 
