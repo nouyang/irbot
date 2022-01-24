@@ -1,4 +1,5 @@
 # irbot
+
 inadvisable relationship bot, updated
 
 Last version created just as GPT was coming out. Results not great. Let's
@@ -58,10 +59,63 @@ Then check installed
 ~$ nvidia-smi
 ~$ nvcc -V
 ~$ sbin/ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
+```
 
 
 ### example errors
+
 - NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
 - Could not use `sudo ubuntu-drivers autoinstall` (got E: Unable to correct problems, you have held broken packages.)
 
 
+
+# Example output
+
+medium: DialoGPT 345M model
+dialogpt-large: DialoGPT 762M model
+Samll: DialoGPT 117M model
+
+```
+>> User:Hi
+DialoGPT: Hiya
+>> User:Bye
+DialoGPT: Bye bye
+>> User:Does money buy happiness?
+DialoGPT: No, but it does buy a new car.
+>> User:What is the best way to buy happiness ?
+DialoGPT: I don't know, but I know the best way to buy happiness is to buy a new car.
+>> User:This is so difficult !
+DialoGPT: I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I know, I
+```
+
+# Notes 
+
+json file tells you model name
+
+```
+Update 2021-03-11: The cache location has now changed, and is located in ~/.cache/huggingface/transformers, as it is also detailed in the answer by @victorx.
+```
+
+# using colab
+
+https://theaidigest.in/conversational-response-generation-using-dialogpt/
+
+
+
+>> User:Hello there
+DialoGPT: General Kenobi
+>> User:Who is general kenobi
+DialoGPT: You are a big guy
+
+===
+
+The repository is based on huggingface pytorch-transformer and OpenAI GPT-2, containing data extraction script, model training code and pretrained small (117M) medium (345M) and large (762M) model checkpoint.
+
+The model is trained on 147M multi-turn dialogue from Reddit discussion thread.
+
+===
+
+Make your own Rick Sanchez (bot) with Transformers and DialoGPT fine-tuning
+
+
+https://colab.research.google.com/drive/15wa925dj7jvdvrz8_z3vU7btqAFQLVlG
