@@ -4,8 +4,11 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
 
-tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
-model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
+#tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
+#model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
+
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-large")
+model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-large")
 
 
 chat_history_ids = []

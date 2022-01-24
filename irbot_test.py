@@ -6,7 +6,7 @@ from transformers import GPT2Tokenizer, TrainingArguments, Trainer, GPTNeoForCau
 torch.manual_seed(42)
 tokenizer = GPT2Tokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B", bos_token='<|startoftext|>',
                                           eos_token='<|endoftext|>', pad_token='<|pad|>')
-model = GPTNeoForCausalLM.from_pretrained("EleutherAI/gpt-neo-1.3B")#.cuda()
+model = GPTNeoForCausalLM.from_pretrained("EleutherAI/gpt-neo-1.3B").cuda()
 print('decided model')
 
 model.resize_token_embeddings(len(tokenizer))
@@ -47,7 +47,7 @@ Trainer(model=model, args=training_args, train_dataset=train_dataset,
                                                               'attention_mask': torch.stack([f[1] for f in data]),
                                                               'labels': torch.stack([f[0] for f in data])}).train()
 print('train')
-generated = tokenizer("<|startoftext|> ", return_tensors="pt").input_ids#.cuda()
+generated = tokenizer("<|startoftext|> ", return_tensors="pt").input_ids.cuda()
 print('tokenized')
 sample_outputs = model.generate(generated, do_sample=True, top_k=50, 
                                 max_length=300, top_p=0.95, temperature=1.9, num_return_sequences=20)
