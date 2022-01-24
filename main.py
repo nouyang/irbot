@@ -25,11 +25,11 @@ def extract_tldr(post):
     tldr = ''
     # Result will include punctuation!
     txt = post.selftext
-    result = re.search('TL[;:,\s]*DR', txt, re.IGNORECASE)
+    result = re.search('TL[;:,\s]*DR[;:,*]*', txt, re.IGNORECASE)
     if result:
         tldr = txt.split(result.group())[-1].strip()
     else:
-        result2 = re.search('TD[;:,\s]*LR', txt, re.IGNORECASE)
+        result2 = re.search('TD[;:,\s]*LR[;:,*]*', txt, re.IGNORECASE)
         if result2:
             tldr = txt.split(result2.group())[-1].strip()
         else: # found NEITHR tldr NOR tdlr
@@ -68,7 +68,7 @@ def scrape_reddit(limit=5):
             txt, txt2 = extract_two_nested_replies(submission, idx=0)
             title = extract_title(submission)
             txt3, txt4 = extract_two_nested_replies(submission, idx=1)
-            
+            print('title', title)
             all_dialogs.extend([tldr, txt, txt2, title, txt3, txt4])
 
         if i%50 == 0:
