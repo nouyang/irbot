@@ -1,0 +1,31 @@
+Reddit account
+Client ID and Secret
+User agent
+
+
+
+
+import praw
+
+reddit = praw.Reddit(
+    client_id="my client id",
+    client_secret="my client secret",
+    user_agent="my user agent",
+)
+
+
+praw.ini:
+[irbot]
+client_id=
+client_secret=
+password=
+username=
+user_agent=script:IRBot:v0.2 (by u/zthrowaway)
+
+
+Note to self: I used throwaway account for this
+https://www.reddit.com/prefs/apps
+(Enable 2FA if needed?)
+
+import praw
+reddit = praw.Reddit('irbot')
