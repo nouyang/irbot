@@ -129,3 +129,216 @@ https://colab.research.google.com/drive/15wa925dj7jvdvrz8_z3vU7btqAFQLVlG
 # gpt colab 2
 
 Rick and Morty : 2487
+
+# more results
+
+```
+
+Hi
+Hello
+Today, I had a fight with my friend, and I'm not sure what to do now.
+My friend broke my phone and I want to confront her but I'm not sure how
+My cat died
+I'm not sure how to be a good friend
+How do I be a good friend?
+How do I find friends?
+Do I have to go to this dinner even though I don't want to?
+You're pretty helpful
+Bye
+
+
+>> User:Hi
+RickBot: !!!?!!,!!1!!>!!'!!If!!2!!6!!3!!5!!25!!
+>> User:Hello
+RickBot: !!!?!!You!!It!!Me!!
+>> User:Today, I had a fight with my friend, and I'm not sure what to do now.
+RickBot: I don’t know if I should talk to him or not
+>> User:My friend broke my phone and I want to confront her but I'm not sure how
+RickBot: What is your current situation? How do you feel about it?
+>> User:My cat died
+RickBot: !!!!'!!?!!What!!:!!Your!!Is!!,!!I!!If!!You!!Work!!The!!F!!This!!
+>> User:I'm not sure how to be a good friend
+RickBot: I really don’t know how to deal with this kind of situation
+>> User:How do I be a good friend?
+RickBot: You should be friends with him, and not just hang out
+>> User:How do I find friends?
+RickBot: You need to get out of the house and find some friends
+>> User:Should I go to this dinner even though I don't want to?
+RickBot: I think you guys are right
+>> User:You're pretty helpful
+RickBot: !!!?!!If!!,!!This!!Translation!!1!!Hey!!Work!!Language!!First!!>!!Break!!A!!
+Bye
+
+
+===
+
+>> User:Hi
+DialoGPT: Hi
+>> User:Hello
+DialoGPT: 
+>> User:Today, I had a fight with my friend, and I'm not sure what to do now.
+DialoGPT: What's the story with the guy?
+>> User:My friend broke my phone and I want to confront her but I'm not sure how
+DialoGPT: I'm sorry to hear that.
+>> User:My cat died
+DialoGPT: I'm sorry to hear that.
+>> User:I'm not sure how to be a good friend
+DialoGPT: I'm sorry to hear that.
+>> User:How do I be a good friend?
+DialoGPT: I'm sorry to be sorry
+>> User:How do I find friends?
+DialoGPT: I'm sorry to be sorry
+>> User:Do I have to go to this dinner even though I don't want to?
+DialoGPT: 
+>> User:You're pretty helpful
+DialoGPT: 
+>> User:Bye
+DialoGPT: 
+
+===
+with NO chat history
+
+```
+[Default DialoGPT]
+>> User:Hi
+DialoGPT: Hi
+>> User:Hello
+DialoGPT: 
+>> User:Today, I had a fight with my friend, and I'm not sure what to do now.
+DialoGPT: What's the story with the guy in the back?
+>> User:My friend broke my phone and I want to confront her but I'm not sure how
+DialoGPT: I'm not sure if you're joking or not, but I'm pretty sure that's not how it works.
+>> User:My cat died
+DialoGPT: I'm sorry for your loss.
+>> User:I'm not sure how to be a good friend
+DialoGPT: I'm not sure how to be a good friend
+>> User:How do I be a good friend?
+DialoGPT: I'm a good friend.
+>> User:Should I go to this dinner even though I don't want to?
+DialoGPT: I'm going to the dinner.
+>> User:Do I have to go to this dinner even though I don't want to?
+DialoGPT: I'm going to the dinner.
+>> User:You're pretty helpful
+DialoGPT: You're pretty stupid.
+>> User:Bye
+DialoGPT: I'm not going to be able to play for a few hours. I'll be back in about an hour.
+
+
+
+
+
+[DialoGPT + Finetune on /r/relationships] [490 examples from 200 posts]
+>> User:Hi
+AdviceBot: !!!?!!If!!You!!Have!!Failed!!Me!!,!!I!!Work!!For!!The!!Hour!!Of!!Your!!Interview!!
+>> User:Hello
+AdviceBot: Hello friend
+>> User:Today, I had a fight with my friend, and I'm not sure what to do now.
+AdviceBot: What is the best way to resolve this?
+>> User:My friend broke my phone and I want to confront her but I'm not sure how
+AdviceBot: Do you have a relationship with her? If so what do you think is the best way to fix it?
+>> User:My cat died
+AdviceBot: !!!?!!You!!Hey!!Get out!!,!!'!!Work!!I!!Will!!This!!It!!Is!!The!!Fatal!!One!!Just!!In!!My!!Home!!For!!That!!M!!L!!And!!What!!“!!Did!!If!!Well!!He!!Expected!!So!!When!!To!!Meet!!A!!New!!Mom!!Trust!!
+>> User:I'm not sure how to be a good friend
+AdviceBot: I would ask her if she has a problem with you or if you need to talk
+>> User:How do I be a good friend?
+AdviceBot: It is not like you have to be a bad person to be friends with her
+>> User:How do I find friends?
+AdviceBot: You should be able to find some people to help you out
+>> User:Do I have to go to this dinner even though I don't want to?
+AdviceBot: It's like you don’t know what you’re doing
+>> User:Should I go to this dinner even though I don't want to?
+AdviceBot: I would not go to the dinner with anyone else
+>> User:You're pretty helpful
+AdviceBot: I just wanted to help
+>> User:Bye
+AdviceBot: I have a feeling I have to find out
+
+[DialoGPT = off-the-shelf model, Advicebot adds finetuning on /r/relationships]
+
+>> Hi
+DialoGPT: Hi
+AdviceBot: !!!?!!If!!You!!Have!!Failed!!Me!!,!!I!!Work!!For!!The!!Hour!!Of!!Your!!Interview!!
+
+>> Hello
+DialoGPT: 
+AdviceBot: Hello friend
+
+>> Today, I had a fight with my friend, and I'm not sure what to do now.
+DialoGPT: What's the story with the guy in the back?
+AdviceBot: What is the best way to resolve this?
+
+>> My friend broke my phone and I want to confront her but I'm not sure how
+DialoGPT: I'm not sure if you're joking or not, but I'm pretty sure that's not how it works.
+AdviceBot: Do you have a relationship with her? If so what do you think is the best way to fix it?
+
+>> My cat died
+DialoGPT: I'm sorry for your loss.
+AdviceBot: !!!?!!You!!Hey!!Get out!!,!!'!!Work!!I!!Will!!This!!It!!Is!!The!!Fatal!!One!!Just!!In!!My!!Home!!For!!That!!M!!L!!And!!What!!“!!Did!!If!!Well!!He!!Expected!!So!!When!!To!!Meet!!A!!New!!Mom!!Trust!!
+
+
+
+
+==
+
+    bot_input_ids = new_user_input_ids
+
+
+>> User:Hi
+DialoGPT: Hi
+>> User:Hello
+DialoGPT: I'm back!
+>> User:Today, I had a fight with my friend, and I'm not sure what to do now.
+DialoGPT: What's the story with the guy in the back?
+>> User:My friend broke my phone and I want to confront her but I'm not sure how
+DialoGPT: I'm not sure if you're joking or not, but I'm pretty sure that's not how it works.
+>> User:My cat died
+DialoGPT: I'm sorry for your loss.
+>> User:It's my first time going to a party, what do I do there
+DialoGPT: I'm not sure if you're joking or not, but you can't go to parties without a drink.
+>> User:It's my first time going on a date, where should I go
+DialoGPT: I'm not sure if you're joking or not, but I'm pretty sure you're joking.
+>> User:I'm not sure how to be a good friend
+DialoGPT: I'm not sure how to be a good friend
+>> User:How do I find friends?
+DialoGPT: I'm in the same boat.
+>> User:You're pretty helpful
+DialoGPT: You're pretty stupid.
+>> User:Bye
+DialoGPT: I'm not going to be able to play for a few hours. I'll be back in about an hour.
+
+
+====
+
+
+>> Hi 
+AdviceBot: !!!?!!If!!,!!It!!M!!.!!'!!Work!! 
+
+>> Hello 
+AdviceBot: Hello hello 
+
+>> Today, I had a fight with my friend, and I'm not sure what to do now. 
+AdviceBot: You need to get over it 
+
+>> My friend broke my phone and I want to confront her but I'm not sure how 
+AdviceBot: Tell her to stop using her iphone 
+
+>> My cat died 
+AdviceBot: !!!?!!,!!'!!I!!Your!!F!! 
+
+>> It's my first time going to a party, what do I do there 
+AdviceBot: It sounds like you don't want to go to a political party 
+
+>> It's my first time going on a date, where should I go 
+AdviceBot: You can always come out 
+
+>> I'm not sure how to be a good friend 
+AdviceBot: I think you two need to be friends 
+
+>> How do I find friends? 
+AdviceBot: You have to ask yourself this very important question 
+
+>> You're pretty helpful 
+AdviceBot: I am not sure how to help you 
+
+>> :Bye 
+AdviceBot: !!!?!!If!!You!!Are!!A!!F!! Work!!,!!This!! Sounds!! Like!!I!!M!!S!! The!!L!!!!Is!!Me!! An!! In!!Wha !! It!!Removes !! First!!Things !! As !!N!!Did!! Change!!
