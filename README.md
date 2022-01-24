@@ -74,7 +74,6 @@ Then check installed
 - NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
 - Could not use `sudo ubuntu-drivers autoinstall` (got E: Unable to correct problems, you have held broken packages.)
 
-<<<<<<< HEAD
 
 
 # Example output
@@ -108,6 +107,7 @@ Update 2021-03-11: The cache location has now changed, and is located in ~/.cach
 
 https://theaidigest.in/conversational-response-generation-using-dialogpt/
 
+# dialogpt
 
 
 >> User:Hello there
@@ -115,15 +115,17 @@ DialoGPT: General Kenobi
 >> User:Who is general kenobi
 DialoGPT: You are a big guy
 
-===
 
 The repository is based on huggingface pytorch-transformer and OpenAI GPT-2, containing data extraction script, model training code and pretrained small (117M) medium (345M) and large (762M) model checkpoint.
 
 The model is trained on 147M multi-turn dialogue from Reddit discussion thread.
 
-===
+# gpt colab 1
 
 Make your own Rick Sanchez (bot) with Transformers and DialoGPT fine-tuning
 
-
 https://colab.research.google.com/drive/15wa925dj7jvdvrz8_z3vU7btqAFQLVlG
+
+# gpt colab 2
+
+Rick and Morty : 2487
