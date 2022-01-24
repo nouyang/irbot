@@ -71,5 +71,3 @@ Then check installed
 - NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
 - Could not use `sudo ubuntu-drivers autoinstall` (got E: Unable to correct problems, you have held broken packages.)
 
-
->>>>>>> b4f5879085d47c61bd7080d29a84d4bd9f5d7458
